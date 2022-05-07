@@ -7,7 +7,7 @@ import (
 )
 
 func f1(w http.ResponseWriter, r *http.Request) {
-	file, err := ioutil.ReadFile("./xx.txt")
+	file, err := ioutil.ReadFile("server.http.go")
 	if err != nil {
 		w.Write([]byte(fmt.Sprintf("%v", err)))
 	}
